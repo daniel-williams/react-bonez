@@ -30,7 +30,7 @@ var config = {
     output: {
         path: DIST_PATH,
         filename: '[name].js',
-        publicPath: 'http://react-bonez.com:8088/'
+        publicPath: 'http://localhost:8080/'
     },
     plugins: [
         new webpack.ProvidePlugin({

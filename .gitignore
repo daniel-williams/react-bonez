@@ -193,3 +193,6 @@ ModelManifest.xml
 
 # Atom? scripts
 null/
+
+# VS Code
+typings/

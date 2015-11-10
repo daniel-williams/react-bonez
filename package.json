@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "webpack -w",
-    "start": "webpack-dev-server --devtool eval --progress --colors --hot",
+    "start": "webpack-dev-server --devtool eval --progress --colors --hot --inline --content-base web/",
     "lint": "eslint ./Web/app --ext .js --ext .jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
