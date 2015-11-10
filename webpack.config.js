@@ -42,7 +42,8 @@ var config = {
             { test: /\.jsx?$/, include: APP_ROOT, loader: 'eslint-loader' },
         ],
         loaders: [
-            { test: /\.jsx?$/, include: APP_ROOT, loaders: ['react-hot', 'babel'] },
+            { test: /\.jsx?$/, exclude: [NODE_MODULES, BOWER_COMPONENTS], loader: 'babel', query: { presets: ['es2015', 'react'] } },
+            { test: /\.jsx?$/, exclude: [NODE_MODULES, BOWER_COMPONENTS], loaders: ['react-hot'] },
             { test: /\.css$/, loader: 'style!css' },
             { test: /\.less$/, loader: 'style!css!less' },
             { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'url?limit=100000' },
