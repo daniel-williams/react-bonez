@@ -21,7 +21,7 @@ var config = {
         extensions: ['', '.js', '.jsx'],
         fallback: NODE_MODULES,
         alias: {
-            lodash: 'lodash/dist/lodash'
+            lodash: path.resolve(NODE_MODULES + 'lodash/index.js')
         }
     },
     resolveLoader: {
